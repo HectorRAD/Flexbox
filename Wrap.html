@@ -15,6 +15,33 @@
         cursor: pointer;
         background-color: #cd30d3;
     }
+
+    .wrap-container {
+        display: flex;
+        gap: 75px;
+        background-color: rgb(24, 13, 88);
+        align-items:flex-start;
+        flex-wrap: wrap;
+        height: 600px;
+    }
+
+    .rev-container {
+        display: flex;
+        gap: 75px;
+        background-color: rgb(43, 117, 167);
+        align-items:flex-start;
+        flex-wrap: wrap-reverse;
+        height:600px;
+    }
+
+    .nope-container {
+        display: flex;
+        gap: 75px;
+        background-color: rgb(124, 33, 124);
+        align-items:flex-start;
+        flex-wrap: nowrap;
+        height: 500px;
+    }
     
 
 </style>
@@ -26,8 +53,63 @@
 <body>
     <h1>Flexbox: Wrap</h1>
     
-    <p>Texto</p>
-   
+    <p>Wrap es el parametro encargado de definir como se manejara el overflow de los elementos en un contenedor.</p>
+    <p>Por default está desativado y se define con los siguientes terminos: wrap, nowrap y wrap-reverse</p>
+
+    <h2>Contenedor en NoWrap </h5>
+    
+        <div class="nope-container">
+        
+            <img src="Yoshi.jpg" alt="Yoshi 1" width="25" height="25"> 
+            <img src="Yoshi.jpg" alt="Yoshi 2" width="50" height="50"> 
+            <img src="Yoshi.jpg" alt="Yoshi 3" width="75" height="75"> 
+            <img src="Yoshi.jpg" alt="Yoshi 4" width="100" height="100"> 
+            <img src="Yoshi.jpg" alt="Yoshi 5" width="125" height="125">
+            <img src="Yoshi.jpg" alt="Yoshi 6" width="150" height="150">
+            <img src="Yoshi.jpg" alt="Yoshi 7" width="175" height="175">
+            <img src="Yoshi.jpg" alt="Yoshi 8" width="200" height="200">
+            <img src="Yoshi.jpg" alt="Yoshi 9" width="225" height="225">
+            <img src="Yoshi.jpg" alt="Yoshi 10" width="250" height="250">
+            <img src="Yoshi.jpg" alt="Yoshi 11" width="275" height="275">
+        </div>
+
+        <h2>Contenedor en Wrap </h5>
+    
+            <div class="wrap-container">
+            
+                <img src="Yoshi.jpg" alt="Yoshi 1" width="25" height="25"> 
+                <img src="Yoshi.jpg" alt="Yoshi 2" width="50" height="50"> 
+                <img src="Yoshi.jpg" alt="Yoshi 3" width="75" height="75"> 
+                <img src="Yoshi.jpg" alt="Yoshi 4" width="100" height="100"> 
+                <img src="Yoshi.jpg" alt="Yoshi 5" width="125" height="125">
+                <img src="Yoshi.jpg" alt="Yoshi 6" width="150" height="150">
+                <img src="Yoshi.jpg" alt="Yoshi 7" width="175" height="175">
+                <img src="Yoshi.jpg" alt="Yoshi 8" width="200" height="200">
+                <img src="Yoshi.jpg" alt="Yoshi 9" width="225" height="225">
+                <img src="Yoshi.jpg" alt="Yoshi 10" width="250" height="250">
+                <img src="Yoshi.jpg" alt="Yoshi 11" width="275" height="275">
+            </div>
+
+
+        <h2>Contenedor en Wrap </h5>
+
+            <div class="rev-container">
+            
+                <img src="Yoshi.jpg" alt="Yoshi 1" width="25" height="25"> 
+                <img src="Yoshi.jpg" alt="Yoshi 2" width="50" height="50"> 
+                <img src="Yoshi.jpg" alt="Yoshi 3" width="75" height="75"> 
+                <img src="Yoshi.jpg" alt="Yoshi 4" width="100" height="100"> 
+                <img src="Yoshi.jpg" alt="Yoshi 5" width="125" height="125">
+                <img src="Yoshi.jpg" alt="Yoshi 6" width="150" height="150">
+                <img src="Yoshi.jpg" alt="Yoshi 7" width="175" height="175">
+                <img src="Yoshi.jpg" alt="Yoshi 8" width="200" height="200">
+                <img src="Yoshi.jpg" alt="Yoshi 9" width="225" height="225">
+                <img src="Yoshi.jpg" alt="Yoshi 10" width="250" height="250">
+                <img src="Yoshi.jpg" alt="Yoshi 11" width="275" height="275">
+            </div>
+    
+
+    <p></p>
     <a href="/Home.html" class="button">Home</a>
     
 
